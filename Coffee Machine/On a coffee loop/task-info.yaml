@@ -271,6 +271,78 @@ files:
         }
     }
   learner_created: false
+- name: src/machine/CoffeeMachine.java
+  visible: true
+  text: "package machine;\nimport java.util.Scanner;\n\npublic class CoffeeMachine\
+    \ {\n    public static void main(String[] args) {\n        Scanner input = new\
+    \ Scanner(System.in);\n    /*      System.out.println(\"Starting to make a coffee\\\
+    n\" +\n                \"Grinding coffee beans\\n\" +\n                \"Boiling\
+    \ water\\n\" +\n                \"Mixing boiled water with crushed coffee beans\\\
+    n\" +\n                \"Pouring coffee into the cup\\n\" +\n                \"\
+    Pouring some milk into the cup\\n\" +\n                \"Coffee is ready!\");\n\
+    \n        System.out.println(\"How many cups of coffee do you need? \");\n   \
+    \     int cups = input.nextInt();\n        int water = cups * 200;\n        int\
+    \ milk = cups * 50;\n        int beans = cups * 15;\n        System.out.println(\"\
+    for \"+ cups +\" cups of coffee you will need: \\n\" +\n                \"\" +\
+    \ water + \"mL of water\\n\" +\n                \"\" + milk + \"mL of milk\\n\"\
+    \ +\n                \"\" + beans + \"g of coffee beans\");\n\n        int water\
+    \ = input.nextInt() / 200;\n        int milk = input.nextInt() / 50;\n       \
+    \ int beans = input.nextInt() / 15;\n        int cups = input.nextInt();\n   \
+    \     int n;\n        int N;\n\n        n = Math.min(water, Math.min(milk, beans));\n\
+    \n        System.out.println(n);\n        if (n == cups) {\n            System.out.println(\"\
+    Yes, I can make that amount of coffee\");\n        } else if (n > cups) {\n  \
+    \          n -= cups;\n            System.out.println(\"Yes, I can make that amount\
+    \ of coffee (and even \" + n + \" more than that)\");\n        } else if (n <\
+    \ cups) {\n            System.out.println(\"No, I can make only \" + n + \" cup(s)\
+    \ of coffee\");\n        } \n        int water = 400;\n        int milk = 540;\n\
+    \        int beans = 120;\n        int cups = 9;\n        int money = 550;\n \
+    \       System.out.println(\"The coffee machine has: \\n\" +\n               \
+    \ + water  + \" of water\\n\"\n                + milk + \" of milk\\n\"\n    \
+    \            + beans + \" of beans\\n\"\n                + cups + \" of disposable\
+    \ cups\\n\"\n                + money + \" of money\\n\");\n        String choice\
+    \ = input.nextLine();\n        choice = choice.toLowerCase();\n\n        switch\
+    \ (choice) {\n            case \"buy\":\n                int type = input.nextInt();\n\
+    \                switch (type) {\n                    case 1: // Espresso\n  \
+    \                      water -= 250;\n                        beans -= 16;\n \
+    \                       money += 4;\n                        cups -= 1;\n    \
+    \                    System.out.println(\"The coffee machine has: \\n\" +\n  \
+    \                              + water  + \" of water\\n\"\n                 \
+    \               + milk + \" of milk\\n\"\n                                + beans\
+    \ + \" of beans\\n\"\n                                + cups + \" of disposable\
+    \ cups\\n\"\n                                + money + \" of money\\n\");\n  \
+    \                      break;\n                    case 2: // Latte\n        \
+    \                water -= 350;\n                        milk -= 75;\n        \
+    \                beans -= 20;\n                        money += 7;\n         \
+    \               cups -= 1;\n                        System.out.println(\"The coffee\
+    \ machine has: \\n\" +\n                                + water  + \" of water\\\
+    n\"\n                                + milk + \" of milk\\n\"\n              \
+    \                  + beans + \" of beans\\n\"\n                              \
+    \  + cups + \" of disposable cups\\n\"\n                                + money\
+    \ + \" of money\\n\");\n                        break;\n                    case\
+    \ 3: // Cappuccino\n                        water -= 200;\n                  \
+    \      milk -= 100;\n                        beans -= 12;\n                  \
+    \      money += 6;\n                        cups -= 1;\n                     \
+    \   System.out.println(\"The coffee machine has: \\n\" +\n                   \
+    \             + water  + \" of water\\n\"\n                                + milk\
+    \ + \" of milk\\n\"\n                                + beans + \" of beans\\n\"\
+    \n                                + cups + \" of disposable cups\\n\"\n      \
+    \                          + money + \" of money\\n\");\n                    \
+    \    break;\n                }\n                break;\n            case \"fill\"\
+    :\n                water += input.nextInt();\n                milk += input.nextInt();\n\
+    \                beans += input.nextInt();\n                cups += input.nextInt();\n\
+    \                System.out.println(\"The coffee machine has: \\n\" +\n      \
+    \                  + water  + \" of water\\n\"\n                        + milk\
+    \ + \" of milk\\n\"\n                        + beans + \" of beans\\n\"\n    \
+    \                    + cups + \" of disposable cups\\n\"\n                   \
+    \     + money + \" of money\\n\");\n                break;\n            case \"\
+    take\":\n                System.out.println(\"I gave you \" + money);\n      \
+    \          money -= money;\n                System.out.println(\"The coffee machine\
+    \ has: \\n\" +\n                        + water  + \" of water\\n\"\n        \
+    \                + milk + \" of milk\\n\"\n                        + beans + \"\
+    \ of beans\\n\"\n                        + cups + \" of disposable cups\\n\"\n\
+    \                        + money + \" of money\\n\");\n                break;\n\
+    \        } */\n        \n    }\n}\n"
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/33/stages/179/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 5

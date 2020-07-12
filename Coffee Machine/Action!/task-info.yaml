@@ -354,6 +354,35 @@ files:
         }
     }
   learner_created: false
+- name: src/machine/CoffeeMachine.java
+  visible: true
+  text: |
+    package machine;
+    import java.util.Scanner;
+
+    public class CoffeeMachine {
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            int water = input.nextInt() / 200;
+            int milk = input.nextInt() / 50;
+            int beans = input.nextInt() / 15;
+            int cups = input.nextInt();
+            int n;
+
+            n = Math.min(water, Math.min(milk, beans));
+
+            System.out.println(n);
+            if (n == cups) {
+                System.out.println("Yes, I can make that amount of coffee");
+            } else if (n > cups) {
+                n -= cups;
+                System.out.println("Yes, I can make that amount of coffee (and even " + n + " more than that)");
+            } else if (n < cups) {
+                System.out.println("No, I can make only " + n + " cup(s) of coffee");
+            }
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/33/stages/178/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 4
